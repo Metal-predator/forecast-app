@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-weather forecast</title>
+    <link rel="stylesheet" href="style.CSS">
+     <!-- Weather Icons Library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Enter city name">
+                <button onclick="getWeatherByCity()"><i class="wi wi-search"></i></button>
+                <button onclick="getWeatherByLocation()"><i class="wi wi-gps"></i></button>
+                <button onclick="toggleUnit()" id="unitToggle">°C / °F</button>
+            </div>
+        </div>
+
+        <!-- Current Weather -->
+        <div class="current-weather" id="currentWeather">
+            <!-- Dynamically populated by JS -->
+        </div>
+
+        <!-- Hourly Forecast (Optional) -->
+        <div class="hourly-forecast" id="hourlyForecast">
+            <!-- Dynamically populated by JS -->
+        </div>
+
+        <!-- 5-Day Forecast -->
+        <div class="forecast" id="fiveDayForecast">
+            <!-- Dynamically populated by JS -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
